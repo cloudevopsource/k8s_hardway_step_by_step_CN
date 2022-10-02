@@ -1,6 +1,6 @@
 <img alt="kubeasz-logo" width="600" height="200" src="pics/ukraine.jpg">
 
-##                   **声援乌克兰，反对战争，守护世界和平! **
+##                   声援乌克兰，反对战争，守护世界和平! 
 
 ​         **战争没有赢家，受伤的永远是平民！俄罗斯的侵略旨在摧毁一个作为主权独立国家的乌克兰，将导致可怕的人道主义灾难！**
 
@@ -26,7 +26,7 @@
 
   支付宝码(左)和微信钱包码(右)
 
-  <img src="pics/alipay.jpg" alt="支付宝" style="zoom:25%;" /> `<img src="pics/wxpay.jpg" alt="微信钱包" style="zoom:34%;" />
+  <img src="pics/alipay.jpg" alt="支付宝" width="200" height="200" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="200" height="200" />
 
 ## 安装指南
 
