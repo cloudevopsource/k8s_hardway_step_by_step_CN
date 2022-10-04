@@ -101,7 +101,7 @@
 
 - 捐赠：如果觉得本项目对您有帮助，请小小鼓励下项目作者，谢谢！
 
-      支付宝码(左)           微信钱包码(右)
+         支付宝码(左)            微信钱包码(右)
 
   <img src="pics/alipay.jpg" alt="支付宝" width="200" height="200" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="195" height="195" />
 
