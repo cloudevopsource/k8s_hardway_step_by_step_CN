@@ -34,6 +34,12 @@
         <td><a href="docs/setup/05-install_kube_node.md">06.安装配置nginx实现HA</a></td>
         <td><a href="docs/setup/07-install_cluster_addon.md">07.安装配置etcd集群</a></td>
     </tr>
+    <tr>
+        <td><a href="docs/setup/01-CA_and_prerequisite.md">08.分发k8s软件包</a></td>
+        <td><a href="docs/setup/03-container_runtime.md">09.安装配置containerd</a></td>
+        <td><a href="docs/setup/05-install_kube_node.md">10.安装配置kube-apiserver集群</a></td>
+        <td><a href="docs/setup/07-install_cluster_addon.md">11.安装配置kube-controller-manager集群</a></td>
+    </tr>    
 </table>
 
 
