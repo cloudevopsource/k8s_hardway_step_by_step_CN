@@ -4,9 +4,9 @@
 
 ***<u>战争没有赢家，受伤的永远是平民！俄罗斯的侵略旨在摧毁一个作为主权独立国家的乌克兰，将导致可怕的人道主义灾难！</u>***
 
-<img alt="kubeasz-logo" width="220" height="230" src="pics/k8shardway.jpg">
 
 ## Kubernetes The Hard Way(中文版)
+<img alt="kubeasz-logo" width="220" height="230" src="pics/k8shardway.jpg">
 
 ​     本教程将引导您以Kubernetes The Hard Way(困难模式)以二进制方式部署设置 Kubernetes。本指南不适用于寻求全自动命令来启动 Kubernetes 集群的人。本教程针对学习进行了优化，这意味着要确保您了解引导 Kubernetes 集群所需的每项任务; 同时注重通过对kubernetes原理及工作 流阐述，努力成为`kubernetes`基于生产环境的最佳实践。
 
