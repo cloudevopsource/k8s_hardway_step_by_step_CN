@@ -16,17 +16,7 @@
 - **运行时** [containerd](docs/setup/03-container_runtime.md) 
 - **网络** [calico](docs/setup/network-plugin/calico.md)
 
-## 沟通交流
 
-- 微信：solaris10
-
-- 邮件: orasun@vip.qq.com
-
-- 捐赠：如果觉得本项目对您有帮助，请小小鼓励下项目作者，谢谢！
-
-  支付宝码(左)和微信钱包码(右)
-
-  <img src="pics/alipay.jpg" alt="支付宝" width="200" height="200" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="200" height="200" />
 
 ## kubernetes安装指南(00序号开头)
 
@@ -102,6 +92,18 @@
     </tr>
 </table>
 - 
+
+## 沟通交流
+
+- 微信：solaris10
+
+- 邮件: orasun@vip.qq.com
+
+- 捐赠：如果觉得本项目对您有帮助，请小小鼓励下项目作者，谢谢！
+
+  支付宝码(左)和微信钱包码(右)
+
+  <img src="pics/alipay.jpg" alt="支付宝" width="200" height="200" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="200" height="200" />
 
 ## 贡献&致谢
 
