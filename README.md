@@ -1,4 +1,4 @@
-<img alt="kubeasz-logo" width="300" height="300" src="pics/ukraine.jpg">
+<img alt="kubeasz-logo"  src="pics/ukraine.jpg">
 
 ##                   声援乌克兰，反对战争，守护世界和平! 
 
