@@ -4,7 +4,7 @@
 
 ***<u>战争没有赢家，受伤的永远是平民！俄罗斯的侵略旨在摧毁一个作为主权独立国家的乌克兰，将导致可怕的人道主义灾难！</u>***
 
-<img alt="kubeasz-logo" width="220" height="250" src="pics/k8shardway.jpg">
+<img alt="kubeasz-logo" width="220" height="230" src="pics/k8shardway.jpg">
 
 ## Kubernetes The Hard Way(中文版)
 
