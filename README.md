@@ -40,6 +40,18 @@
         <td><a href="docs/setup/05-install_kube_node.md">10.安装配置kube-apiserver集群</a></td>
         <td><a href="docs/setup/07-install_cluster_addon.md">11.安装配置kube-controller-manager集群</a></td>
     </tr>    
+    <tr>
+        <td><a href="docs/setup/01-CA_and_prerequisite.md">12.安装配置kube-scheduler集群</a></td>
+        <td><a href="docs/setup/03-container_runtime.md">13.安装配置kubelet</a></td>
+        <td><a href="docs/setup/05-install_kube_node.md">14.安装配置kube-proxy</a></td>
+        <td><a href="docs/setup/07-install_cluster_addon.md">15.安装配置calico</a></td>
+    </tr>  
+    <tr>
+        <td><a href="docs/setup/01-CA_and_prerequisite.md">16.安装配置coredns</a></td>
+        <td><a href="docs/setup/03-container_runtime.md">17.验证集群功能.md</a></td>
+        <td><a href="docs/setup/05-install_kube_node.md"></a></td>
+        <td><a href="docs/setup/07-install_cluster_addon.md"></a></td>
+    </tr>  
 </table>
 
 
