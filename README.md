@@ -28,7 +28,7 @@
 
   <img src="pics/alipay.jpg" alt="支付宝" width="200" height="200" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="200" height="200" />
 
-## 安装指南
+## kubernetes安装指南(00序号开头)
 
 <table border="0">
     <tr>
@@ -45,7 +45,27 @@
     </tr>
 </table>
 
-## 使用指南
+
+## kubernetes生态安装指南(000序号开头)
+
+<table border="0">
+    <tr>
+        <td><a href="docs/setup/00-planning_and_overall_intro.md">00-规划集群和配置介绍</a></td>
+        <td><a href="docs/setup/02-install_etcd.md">02-安装etcd集群</a></td>
+        <td><a href="docs/setup/04-install_kube_master.md">04-安装master节点</a></td>
+        <td><a href="docs/setup/06-install_network_plugin.md">06-安装集群网络</a></td>
+    </tr>
+    <tr>
+        <td><a href="docs/setup/01-CA_and_prerequisite.md">01-创建证书和安装准备</a></td>
+        <td><a href="docs/setup/03-container_runtime.md">03-安装容器运行时</a></td>
+        <td><a href="docs/setup/05-install_kube_node.md">05-安装node节点</a></td>
+        <td><a href="docs/setup/07-install_cluster_addon.md">07-安装集群插件</a></td>
+    </tr>
+</table>
+
+
+
+## kubernetes管理指南(序号0000开头)
 
 <table border="0">
     <tr>
