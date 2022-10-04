@@ -103,7 +103,7 @@
 
      ​      支付宝码(左)            微信钱包码(右)
 
-  <img src="pics/alipay.jpg" alt="支付宝" width="160" height="160" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="155" height="155" />
+  <img src="pics/alipay.jpg" alt="支付宝" width="150" height="150" /> `<img src="pics/wxpay.jpg" alt="微信钱包" width="145" height="145" />
 
 ## 贡献&致谢
 
