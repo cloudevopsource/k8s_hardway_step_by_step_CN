@@ -71,7 +71,7 @@
 <table border="0">
     <tr>
         <td><a href="docs/setup/00-planning_and_overall_intro.md">0001.kubectl常用命令汇总</a></td>
-        <td><a href="docs/setup/02-install_etcd.md">0002.基于containerd容器工具集</a></td>
+        <td><a href="docs/setup/02-install_etcd.md">0002.容器操作及构建工具集</a></td>
         <td><a href="docs/setup/04-install_kube_master.md">0003.手动拉取国外镜像</a></td>
         <td><a href="docs/setup/06-install_network_plugin.md">0004.containerd配置私有仓库</a></td>
     </tr>
