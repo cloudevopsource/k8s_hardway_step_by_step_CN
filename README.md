@@ -66,20 +66,20 @@
     </tr>
 </table>
 
-## kubernetes配置 及管理指南(序号0000开头)
+## kubernetes配置管理指南(序号0000开头)
 
 <table border="0">
     <tr>
-        <td><a href="docs/setup/00-planning_and_overall_intro.md">001.安装配置helm</a></td>
-        <td><a href="docs/setup/02-install_etcd.md">02-安装etcd集群</a></td>
-        <td><a href="docs/setup/04-install_kube_master.md">04-安装master节点</a></td>
-        <td><a href="docs/setup/06-install_network_plugin.md">06-安装集群网络</a></td>
+        <td><a href="docs/setup/00-planning_and_overall_intro.md">0001.kubectl常用命令汇总</a></td>
+        <td><a href="docs/setup/02-install_etcd.md">0002.基于containerd容器工具集</a></td>
+        <td><a href="docs/setup/04-install_kube_master.md">0003.手动拉取国外镜像</a></td>
+        <td><a href="docs/setup/06-install_network_plugin.md">0004.containerd配置私有仓库</a></td>
     </tr>
     <tr>
-        <td><a href="docs/setup/01-CA_and_prerequisite.md">01-创建证书和安装准备</a></td>
-        <td><a href="docs/setup/03-container_runtime.md">03-安装容器运行时</a></td>
-        <td><a href="docs/setup/05-install_kube_node.md">05-安装node节点</a></td>
-        <td><a href="docs/setup/07-install_cluster_addon.md">07-安装集群插件</a></td>
+        <td><a href="docs/setup/01-CA_and_prerequisite.md">0005.新增worker节点手动加入k8s集群</a></td>
+        <td><a href="docs/setup/03-container_runtime.md">0006.基于calico配置NetworkPolicy</a></td>
+        <td><a href="docs/setup/05-install_kube_node.md">0007.基于velero集群备份恢复</a></td>
+        <td><a href="docs/setup/07-install_cluster_addon.md">0008.升级k8s集群</a></td>
     </tr>
 </table>
 
