@@ -1,0 +1,97 @@
+# 0008.kubectl维护使用技巧集
+
+## Namespace 无法删除一直处于 Terminating 状态
+
+### 问题
+
+删除 namespace 失败，通过 kubectl 查看 namespace 状态，发现其一直处于 terminating 状态。
+
+```
+$ kubectl get ns kjf121e-acvip
+NAME            STATUS        AGE
+kjf121e-acvip   Terminating   33m
+```
+
+### 根本原因
+
+有以下三种原因导致 namespace 处于 terminating 状态：
+
+1. namespace 中还存在资源未被删除
+2. 存在未 Ready 的 APIService
+
+### 处理过程
+
+检查该 namespace 中是否还存在未被清理的资源
+
+```bash
+# 修改 {namespace} 为实际的 namespace
+kubectl api-resources --verbs=list --namespaced -o name | xargs -n 1 kubectl get --show-kind --ignore-not-found -n {namespace}
+```
+
+如果依然存在资源未被删除，需等待其被清理。如果没有残留资源，却依然处于 Terminating 状态，可参照后续步骤执行。
+
+检查是否存在未 Ready 的 APIService
+
+```
+$ kubectl get APIService
+NAME                                   SERVICE                      AVAILABLE   AGE
+v1.                                    Local                        True        28h
+v1.apps                                Local                        True        28h
+v1.authentication.k8s.io               Local                        True        28h
+v1.authorization.k8s.io                Local                        True        28h
+...
+v1beta1.extensions                     Local                        True        28h
+v1beta1.metrics.k8s.io                 kube-system/metrics-server   True        28h
+v1beta1.networking.k8s.io              Local                        True        28h
+v1beta1.node.k8s.io                    Local                        True        28h
+...
+v2beta2.autoscaling                    Local                        True        28h
+```
+
+手动删除namespace，如果处理完未被删除的资源后，问题仍存在，则可按照如下步骤操作：
+
+注意！！万万不可在没有执行上面的检查的情况下执行以下步骤
+
+导出 namespace json 文件
+
+```
+ # 替换其中的 <terminating-namespace> 为实际 namespace
+ $ kubectl get namespace <terminating-namespace> -o json >tmp.json
+```
+
+编辑上一步导出的 json 文件，去除 spec.finalizers 配置
+
+```
+ {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+          "creationTimestamp": "2018-11-19T18:48:30Z",
+          "deletionTimestamp": "2018-11-19T18:59:36Z",
+          "name": "<terminating-namespace>",
+          "resourceVersion": "1385077",
+          "selfLink": "/api/v1/namespaces/<terminating-namespace>",
+          "uid": "b50c9ea4-ec2b-11e8-a0be-fa163eeb47a5"
+      },
+      "spec": {
+         "finalizers": []
+      },
+      "status": {
+          "phase": "Terminating"
+      }
+  }
+```
+
+本地通过 `kubectl proxy` 开启代理，便于无认证访问 apiserver api
+
+```
+$ kubectl proxy
+```
+
+执行如下命令来删除 namespace，其中 tmp.json 为第一步中导出的 json 文件，<terminating-namespace> 需替换为实际的 namespace
+
+```
+$ curl -k -H "Content-Type: application/json" -X PUT --data-binary @tmp.json http://127.0.0.1:8001/api/v1/namespaces/<terminating-namespace>/finalize
+```
+
+5.重新查看 namespace 是否被删除，此时应该已经删除了。
