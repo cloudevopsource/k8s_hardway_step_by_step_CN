@@ -1,7 +1,11 @@
 # 0008.kubectl维护使用技巧集
 
 ## Namespace 无法删除一直处于 Terminating 状态
-
+强制删除容器
+```
+ kubectl delete pods calico-kube-controllers-5985fd6689-pr8q2   -n calico-system --force
+ // kubectl delete pods <podname> -n <namespace> --force
+```
 ### 问题
 
 删除 namespace 失败，通过 kubectl 查看 namespace 状态，发现其一直处于 terminating 状态。
